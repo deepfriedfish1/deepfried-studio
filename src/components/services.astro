@@ -1,9 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
-
-// Явно указываем тип для переменной, которая получит результат getCollection
-const services = await getCollection('services') as CollectionEntry<'services'>[];
+const servicesList = await getCollection('services');
 ---
 
 <section id="services">
@@ -13,18 +10,15 @@ const services = await getCollection('services') as CollectionEntry<'services'>[
       <p>Мы предлагаем полный спектр услуг для создания и продвижения вашего онлайн-присутствия</p>
     </div>
     <div class="services-grid">
-      {
-        // Теперь service имеет правильный тип CollectionEntry<'services'>
-        services.map((service) => (
-          <div class="service-card">
-            <div class="service-icon">
-              <i class={service.data.icon}></i>
-            </div>
-            <h3>{service.data.title}</h3>
-            <p>{service.data.description}</p>
+      {servicesList.map((service) => (
+        <div class="service-card">
+          <div class="service-icon">
+            <i class={service.data.icon}></i>
           </div>
-        ))
-      }
+          <h3>{service.data.title}</h3>
+          <p>{service.data.description}</p>
+        </div>
+      ))}
     </div>
   </div>
 </section>

@@ -20,7 +20,7 @@ const teamMembers = await getCollection('team') as CollectionEntry<'team'>[];
             <p>{member.data.role}</p>
             <div class="social-icons">
               {
-                member.data.social?.map((link: { icon: string; url: string }) => (
+                member.data.social?.map((link) => (
                   <a href={link.url} target="_blank" rel="noopener noreferrer">
                     <i class={link.icon}></i>
                   </a>
