@@ -1,0 +1,20 @@
+---
+import heroData from '../content/settings/hero.json';
+const hero = heroData;
+---
+
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 set:html={hero.title}></h1>
+        <p>{hero.subtitle}</p>
+        <a href={hero.btn1_link} class="btn">{hero.btn1_text}</a>
+        <a href={hero.btn2_link} class="btn btn-secondary" style="margin-left: 15px;">{hero.btn2_text}</a>
+      </div>
+      <div class="hero-image">
+        <img src={hero.image} alt="Веб-разработка">
+      </div>
+    </div>
+  </div>
+</section>

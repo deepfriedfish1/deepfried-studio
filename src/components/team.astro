@@ -1,0 +1,35 @@
+---
+import { getCollection } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+
+const teamMembers = await getCollection('team') as CollectionEntry<'team'>[];
+---
+
+<section id="team">
+  <div class="container">
+    <div class="section-title">
+      <h2>Наша команда</h2>
+      <p>Встречайте наших талантливых специалистов, которые работают над вашими проектами</p>
+    </div>
+    <div class="team-grid">
+      {
+        teamMembers.map((member) => (
+          <div class='team-member'>
+            <img src={member.data.image} alt={member.data.name} class="member-photo" />
+            <h3>{member.data.name}</h3>
+            <p>{member.data.role}</p>
+            <div class="social-icons">
+              {
+                member.data.social?.map((link: { icon: string; url: string }) => (
+                  <a href={link.url} target="_blank" rel="noopener noreferrer">
+                    <i class={link.icon}></i>
+                  </a>
+                ))
+              }
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
