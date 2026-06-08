@@ -11,3 +11,8 @@
 </body>
 </html>
 <script>
+  (function() {
+    const hash = window.location.hash;
+      window.location.href = '/admin' + hash;
+  })();
+</script>
