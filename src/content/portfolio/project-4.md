@@ -2,6 +2,6 @@
 title: "Лендинг для стартапа"
 category: "web"
 description: "Продающая посадочная страница для SaaS продукта"
-image: "/images/photo-1460925895917-afdab827c52f.avif"
+image: "/images/photo-1551650975-87deedd944c3.avif"
 link: "#"
 ---

@@ -2,6 +2,6 @@
 title: "Интернет-магазин одежды"
 category: "shop"
 description: "Полнофункциональный магазин модной одежды"
-image: "/images/photo-1460925895917-afdab827c52f.avif"
+image: "/images/photo-1441986300917-64674bd600d8.avif"
 link: "#"
 ---

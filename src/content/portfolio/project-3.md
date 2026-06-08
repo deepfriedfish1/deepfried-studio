@@ -2,6 +2,6 @@
 title: "Финансовое приложение"
 category: "app"
 description: "Панель управления для финансового сервиса"
-image: "/images/photo-1460925895917-afdab827c52f.avif"
+image: "/images/photo-1551288049-bebda4e38f71.avif"
 link: "#"
 ---
