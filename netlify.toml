@@ -1,5 +1,5 @@
 [build]
-  comand = "npm install astro@latest && npx run build"
+  comand = "npm run build"
   publish = "dist"
 
 [build.environment]
