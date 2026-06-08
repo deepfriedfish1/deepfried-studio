@@ -1,6 +1,6 @@
 ---
 title: Корпоративный сайт
 category: web
-description: сыр шлюхи
+description: Современный сайт типо того или че-то еще
 image: /images/photo-1460925895917-afdab827c52f.avif
 ---
