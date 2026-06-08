@@ -1,5 +1,5 @@
 [build]
-  command = "npm install && npm run build"
+  command = "ls -la node_modules/.bin/astro || echo 'astro not found'; npm install && npx astro build"
   publish = "dist"
 
 [build.environment]
