@@ -86,18 +86,5 @@ import '../styles/global.css';
       <button class="btn" style="margin-top: 20px;" id="modalOkBtn">OK</button>
     </div>
   </div>
-
-  <script type="module" src="/src/scripts/main.js"></script>
-  <script>
-    if (window.netlifyIdentity) {
-      window.netlifyIdentity.on("init", function(user) {
-        if (!user) {
-          window.netlifyIdentity.on("login", function() {
-            document.location.href = "/admin/";
-          });
-        }
-      });
-    }
-  </script>
 </body>
 </html>
