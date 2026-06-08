@@ -18,6 +18,7 @@ const portfolio = defineCollection({
     category: z.enum(['web', 'shop', 'app']),
     description: z.string(),
     image: z.string(),
+    link: z.string()
   }),
 });
 

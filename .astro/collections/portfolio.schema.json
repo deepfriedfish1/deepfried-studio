@@ -19,6 +19,9 @@
     "image": {
       "type": "string"
     },
+    "link": {
+      "type": "string"
+    },
     "$schema": {
       "type": "string"
     }
@@ -27,6 +30,7 @@
     "title",
     "category",
     "description",
-    "image"
+    "image",
+    "link"
   ]
 }
