@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: deepfriedfish1/deepfried-studio
   branch: main
 
 media_folder: "public/images"
