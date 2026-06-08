@@ -13,6 +13,10 @@
 <script>
   (function() {
     const hash = window.location.hash;
+    // Проверяем, есть ли в адресе токен для подтверждения, восстановления и т.д.
+    if (hash && (hash.includes('_token=') || hash.includes('access_token='))) {
+      // Перенаправляем на страницу /admin, сохраняя хеш
       window.location.href = '/admin' + hash;
+    }
   })();
 </script>
