@@ -13,69 +13,13 @@ import '../styles/global.css';
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 <body>
-  <header id="header">
-    <div class="container">
-      <nav class="nav-container">
-        <a href="/" class="logo">
-          <i class="fas fa-code"></i> DeepFried Studio
-        </a>
-        <div class="mobile-toggle" id="mobileToggle">
-          <i class="fas fa-bars"></i>
-        </div>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#home">Главная</a></li>
-          <li><a href="#services">Услуги</a></li>
-          <li><a href="#portfolio">Портфолио</a></li>
-          <li><a href="#team">Команда</a></li>
-          <li><a href="#contact">Контакты</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+
 
   <main>
     <slot />  <!-- здесь будет содержимое страницы index.astro -->
   </main>
 
-  <footer>
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-column">
-          <h3>DeepFried Studio</h3>
-          <p>Создаем современные веб-решения для бизнеса любой сложности. От идеи до реализации и поддержки.</p>
-          <div class="social-icons" style="margin-top: 20px;">
-            <a href="#"><i class="fab fa-vk"></i></a>
-            <a href="#"><i class="fab fa-telegram"></i></a>
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-behance"></i></a>
-          </div>
-        </div>
-        <div class="footer-column">
-          <h3>Навигация</h3>
-          <ul class="footer-links">
-            <li><a href="#home">Главная</a></li>
-            <li><a href="#services">Услуги</a></li>
-            <li><a href="#portfolio">Портфолио</a></li>
-            <li><a href="#team">Команда</a></li>
-            <li><a href="#contact">Контакты</a></li>
-          </ul>
-        </div>
-        <div class="footer-column">
-          <h3>Услуги</h3>
-          <ul class="footer-links">
-            <li><a href="#">Веб-разработка</a></li>
-            <li><a href="#">UI/UX Дизайн</a></li>
-            <li><a href="#">Интернет-магазины</a></li>
-            <li><a href="#">SEO оптимизация</a></li>
-            <li><a href="#">Техническая поддержка</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="copyright">
-        <p>&copy; 2023 DeepFried Studio. Все права защищены.</p>
-      </div>
-    </div>
-  </footer>
+
 
   <!-- Модальное окно -->
   <div class="modal" id="contactModal">
