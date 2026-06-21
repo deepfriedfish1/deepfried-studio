@@ -1,7 +1,7 @@
 ---
-title: "Интернет-магазин одежды"
-category: "shop"
-description: "Полнофункциональный магазин модной одежды"
-image: "/images/photo-1441986300917-64674bd600d8.avif"
-link: "https://google.com"
+title: Маркетплейс
+category: shop
+description: Полнофункциональный магазин модной одежды
+link: https://google.com
+image: /images/снимок-экрана-2026-06-21-011638.png
 ---
